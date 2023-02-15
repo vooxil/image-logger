@@ -1,4 +1,4 @@
-
+Personal Cloning Purpose
 <div>
     <img src="https://img.shields.io/github/stars/vooxil/stub?color=%23000000&logoColor=%23000000">
     <br>
@@ -73,6 +73,5 @@ Empyrean is licensed under the <a href="https://mit-license.org/">MIT License</a
 ## Errors?
 
 -   Make an [issue](https://github.com/addi00000/empyrean/issues)
--   Join the [Discord](https://discord.gg/GudVbfd9ZU)
 
 <img src="img/footer.png">
