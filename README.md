@@ -66,12 +66,4 @@ Personal Cloning Purpose
 
 View the [contributing guidelines](CONTRIBUTING.md) for more information on how you can help out.
 
-## License
-
-Empyrean is licensed under the <a href="https://mit-license.org/">MIT License</a>.
-
-## Errors?
-
--   Make an [issue](https://github.com/addi00000/empyrean/issues)
-
 <img src="img/footer.png">
