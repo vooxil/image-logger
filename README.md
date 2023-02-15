@@ -1,6 +1,5 @@
 
 <div>
-    <img src="https://img.shields.io/github/languages/top/vooxil/stubcolor=%23000000">
     <img src="https://img.shields.io/github/stars/vooxil/stub?color=%23000000&logoColor=%23000000">
     <br>
     <img src="https://img.shields.io/github/commit-activity/w/vooxil/stub?color=%23000000"> 
